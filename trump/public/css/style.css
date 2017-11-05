@@ -1,0 +1,253 @@
+/* Style CSS */
+
+/* Fonts */
+@font-face {
+	font-family: SeoulHangang;
+	font-weight: bold;
+	src: url("../fonts/SeoulHangangL.otf") format("opentype");
+}
+
+/* Color & Background */
+.p100 {
+	height: 100px;
+}
+
+.black {
+	background: #222;
+}
+
+.green {
+	background: #e0ffd8;
+}
+
+.green_txt {
+	color: #88cb86;
+}
+
+.red {
+	background: #ffa6a6;
+}
+
+.grey_txt {
+	color: #999;
+}
+
+.pos {
+	background: #fdd3ba;
+}
+
+.pos_txt {
+	color: #fd6d6d;
+}
+
+.neu {
+	background: #C8C8C8;
+}
+
+.neu_txt {
+	color: #840000
+}
+
+.neg {
+	background: #ff0000;
+}
+
+.neg_txt {
+	color: #ffa6a6;
+}
+
+.white_txt {
+	color: #fff;
+}
+
+.trump_pos {
+	background-image: url('../img/img1.png');
+}
+
+.trump_neg {
+	background-image: url('../img/img3.png');
+}
+
+.trump_neu {
+	background-image: url('../img/img5.png');
+}
+
+.trump_gallery {
+	background-image: url('../img/img4.png');
+}
+
+.trump_angry {
+	background-image: url('../img/img6.png');
+}
+
+.trump_graph {
+	background-image: url("../img/img7.png");
+}
+
+.trump_why {
+	background-image: url('../img/img8.png');
+}
+
+/* Menu bar */
+.menu_icon {
+	margin-top: 30px;
+	width: 50px;
+	height: 35px;
+	cursor: pointer;
+	position: fixed;
+	z-index: 1200000;
+	left: 80px;
+}
+
+.menu_icon > div {
+	width: 45px;
+	height: 35px;
+	position: relative;
+}
+
+.menu_icon > div > div {
+	width: 40px;
+	height: 4px;
+	position: absolute;
+	background: #222;
+}
+.menu_icon > div > div:nth-of-type(1) {
+	top: 0;
+}
+
+.menu_icon > div > div:nth-of-type(2), .menu_icon > div > div:nth-of-type(3) {
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.menu_icon > div > div:nth-of-type(4) {
+	bottom: 0;
+}
+
+.menu_icon > div > div:last-child {
+	padding-bottom: 0;
+}
+
+.side_menu {
+	position: fixed;
+	left: 80px;
+	height: 100%;
+	z-index: -1;
+	padding-top: 100px;
+	opacity: 0;
+}
+
+.side_menu ul li {
+	padding: 15px 0;
+	text-align: left;
+}
+
+.side_menu ul li:nth-of-type(2) {
+	transform: translateY(-100%);
+	z-index: -1;
+}
+
+.side_menu ul li:nth-of-type(3) {
+	transform: translateY(-200%);
+	z-index: -2;
+}
+
+.side_menu ul li:nth-of-type(4) {
+	transform: translateY(-300%);
+	z-index: -3;
+}
+
+.side_menu ul li:nth-of-type(5) {
+	transform: translateY(-400%);
+	z-index: -4;
+}
+
+.side_menu ul li a {
+	color: #222;
+	font-size: 25px;
+}
+
+/* Main */
+
+body > .container-fluid {
+	height: 600px;
+	background-repeat: no-repeat;
+	background-position: bottom right;
+}
+
+.col-12 .main_txt {
+	position: relative;
+}
+
+.main_txt {
+	position: absolute;
+	left: 10%;
+	top: 40%;
+	transform: translateY(-50%);
+}
+
+.main_txt1 {
+	font-family: SeoulHangang;
+	font-size: 70px;
+}
+
+.main_txt1 span {
+	font-family: SeoulHangang;
+	color: #ff0000;
+}
+
+.main_txt2 {
+	margin-top: 20px;
+	font-family: SeoulHangang;
+	font-size: 70px;
+}
+
+.main_txt2 span {
+	font-family: SeoulHangang;
+	font-size: 80px;
+}
+
+/* Status bar */
+.bar_txt {
+	margin-top: 50px;
+	margin-bottom: 10px;
+}
+
+.bar_wrap {
+	width: 50%;
+	height: 50px;
+	background: #EEE;
+	float: left;
+	border-radius: 10px;
+}
+
+.bar_value {
+	width: 10%;
+	height: 100%;
+	border-radius: 10px;
+	background: #fd6d6d;
+	float:left;
+	line-height: 50px;
+	color: #fff;
+	text-align: center;
+}
+
+/* gallery row */
+.gall_row {
+	margin-top: 30px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.gall_row > div {
+	overflow: hidden;
+}
+
+.gall_row img {
+	transform: scale(0.8);
+}
+
+/* tweet */
+.col-12 .container iframe {
+	width: 100% !important;
+}
